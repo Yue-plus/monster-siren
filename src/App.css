@@ -1,3 +1,7 @@
+body {
+  cursor: url("./svg/cursor-default.svg"), default;
+}
+
 .App {
   text-align: center;
 }
@@ -14,7 +18,8 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #000000;
+  background-image: url("./bg/bg_loading.png");
   min-height: 100vh;
   display: flex;
   flex-direction: column;

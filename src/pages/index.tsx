@@ -1,9 +1,10 @@
-import styles from './index.less';
+import less from './index.less';
+import Header from '@/component/_layout/header/header';
 
 export default function IndexPage() {
   return (
     <div>
-      <h1 className={styles.title}>monster-siren</h1>
+      <Header />
     </div>
   );
 }

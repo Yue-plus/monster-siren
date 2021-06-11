@@ -11,10 +11,10 @@
   align-items: center;
   justify-content: space-between;
   .action {
-    width: 1.1592rem;
-    height: 0.5592rem;
     display: flex;
     align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease 1.4s;
     &.show {
       opacity: 1;
     }
@@ -24,6 +24,7 @@
       display: flex;
       align-items: center;
       .metallicLogo {
+        //  none
       }
       .logo {
         width: 100%;
@@ -31,55 +32,69 @@
         fill: #91959d;
       }
     }
-    .playWidget {
-      display: flex;
-      align-items: center;
-      .playWidgetCanvas {
-        width: 10.08rem;
-        height: 1.2rem;
+  }
+  .buttonNav {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 4.748em;
+    transform: translateY(25%);
+    opacity: 0;
+    outline: 0;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  }
+  .searchInput {
+    z-index: 1;
+    width: 41.08em;
+    transform: translateY(25%);
+    opacity: 0;
+    &.hide {
+      pointer-events: none;
+    }
+  }
+  .iconNav {
+    position: relative;
+    box-sizing: border-box;
+    z-index: 10;
+    width: 3em;
+    height: 100%;
+    padding: 0.5em;
+    display: block;
+    .bar {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 3em;
+      height: 1px;
+      background-color: #d4d8dd;
+      text-indent: 101%;
+      white-space: nowrap;
+      overflow: hidden;
+      transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+      &:first-child,
+      &:nth-child(3) {
+        width: 1.5em;
+        transform: translateY(-50%) rotate(45deg);
       }
-      .playList {
-        color: #c6c9ce;
-        font-family: 'Sans-Regular', sans-serif;
-        display: inline-block;
-        font-size: 0.24rem;
-        white-space: nowrap;
-        position: relative;
-        user-select: none;
-        width: 4.08rem;
-        height: 0.36rem;
-        line-height: 0.36rem;
-        transition: background 0.5s;
-        &::before {
-          top: -0.07rem;
-        }
-        &::after {
-          bottom: -0.07rem;
-        }
-        &::before,
-        &::after {
-          content: '';
-          display: block;
-          position: absolute;
-          left: -0.07rem;
-          width: calc(100% + 0.14rem);
-          height: 0.07rem;
-          background-image: linear-gradient(
-            90deg,
-            #c6c9ce 0,
-            #c6c9ce 0.07rem,
-            transparent 0,
-            transparent calc(100% - 0.07rem),
-            #c6c9ce calc(100% - 0.07rem),
-            #c6c9ce
-          );
-        }
-        .playListNormal {
-          margin: 0 0.18rem;
-          overflow: hidden;
-          cursor: url('../../../../public/svg/cursor-pointer.svg'), pointer;
-        }
-      }
+    }
+    .bar:first-child {
+      left: 0;
+      transform-origin: right center;
+      transform: translateY(calc(-50% - 1em));
+    }
+    .bar:nth-child(2) {
+      left: 0;
+    }
+    .bar:nth-child(3) {
+      right: 0;
+      transform-origin: left center;
+      transform: translateY(calc(-50% + 1em));
     }
   }
 }

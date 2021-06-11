@@ -1,0 +1,50 @@
+.playWidget {
+  display: flex;
+  align-items: center;
+  .playWidgetCanvas {
+    width: 10.08rem;
+    height: 1.2rem;
+  }
+  .playList {
+    color: #c6c9ce;
+    font-family: 'Sans-Regular', sans-serif;
+    display: inline-block;
+    font-size: 0.24rem;
+    white-space: nowrap;
+    position: relative;
+    user-select: none;
+    width: 4.08rem;
+    height: 0.36rem;
+    line-height: 0.36rem;
+    transition: background 0.5s;
+    &::before {
+      top: -0.07rem;
+    }
+    &::after {
+      bottom: -0.07rem;
+    }
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: -0.07rem;
+      width: calc(100% + 0.14rem);
+      height: 0.07rem;
+      background-image: linear-gradient(
+        90deg,
+        #c6c9ce 0,
+        #c6c9ce 0.07rem,
+        transparent 0,
+        transparent calc(100% - 0.07rem),
+        #c6c9ce calc(100% - 0.07rem),
+        #c6c9ce
+      );
+    }
+    .playListNormal {
+      margin: 0 0.18rem;
+      overflow: hidden;
+      cursor: url('../../../../../public/svg/cursor-pointer.svg'), pointer;
+    }
+  }
+}

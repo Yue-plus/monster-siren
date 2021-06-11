@@ -1,14 +1,12 @@
 import less from './header.less';
+import PlayWidget from '@/component/_layout/header/playWidget/playWidget';
 
 export default function Header() {
   return (
-    <header className={`${less.header} ${less.show}`}>
-      <div className={less.action}>
+    <header className={less.header}>
+      <div className={`${less.action} ${less.show}`}>
         <a className={less.home}>
-          <svg
-            className={`${less.metallicLogo} ${less.logo}`}
-            viewBox="0,0,201,99"
-          >
+          <svg className={`metallicLogo ${less.logo}`} viewBox="0,0,201,99">
             <defs>
               <path
                 id="metallic-logo"
@@ -36,23 +34,34 @@ export default function Header() {
             </g>
           </svg>
         </a>
-        <div className={less.playWidget}>
-          <canvas
-            className={less.playWidgetCanvas}
-            data-cursor="pointer"
-            width="442"
-            height="53"
-          />
-          <div className={less.playList}>
-            <div className={less.playListNormal}>Real Me</div>
-          </div>
-        </div>
+        <PlayWidget />
       </div>
       <nav className={`${less.nav} ${less.show}`}>
         <a className={`link ${less.navItem}`}>ABOUT</a>
         <a className={`link ${less.navItem}`}>MUSIC</a>
         <a className={`link ${less.navItem}`}>INFO</a>
         <a className={`link ${less.navItem}`}>CONTACT</a>
+        <a className={`link ${less.navItem}`}>LOGIN</a>
+        {/*<div className={`${less.navItem} ${less.userGroup}`}>*/}
+        {/*  <div className={less.container}>*/}
+        {/*    <div className={less.actionGroup}>*/}
+        {/*      <span className={less.userAction} data-cursor="pointer">LOGIN</span>*/}
+        {/*    </div>*/}
+        {/*    <div className={less.actionGroup}>*/}
+        {/*      <span className={less.extra}>*/}
+        {/*        <span className={less.userIcon} data-cursor="pointer">*/}
+        {/*          <i className={less.icon}>*/}
+        {/*            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 19">*/}
+        {/*              <path fillRule="evenodd" d="M0 19v-3s1.471-4 6-4 6 4 6 4v3H0zm6-9A5 5 0 116.001-.001 5 5 0 016 10z" />*/}
+        {/*            </svg>*/}
+        {/*          </i>*/}
+        {/*        </span>*/}
+        {/*        <span className={less.divider}>|</span>*/}
+        {/*      </span>*/}
+        {/*      <span className={less.userAction} data-cursor="pointer">LOGOUT</span>*/}
+        {/*    </div>*/}
+        {/*  </div>*/}
+        {/*</div>*/}
       </nav>
     </header>
   );

@@ -3,7 +3,7 @@ import Header from '@/component/_layout/header/header';
 
 export default function IndexPage() {
   return (
-    <div>
+    <div id={less.layout}>
       <Header />
     </div>
   );

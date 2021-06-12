@@ -1,4 +1,8 @@
 #layout {
+  transition: filter 0.3s ease;
+}
+
+.layout {
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -6,6 +10,23 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
-  transition: filter 0.3s ease;
-  display: block;
+  .slogan {
+    position: absolute;
+    bottom: 1.71312rem;
+    left: 2.54976rem;
+    z-index: 10;
+    font-family: 'NovecentoSansWide-UltraLight', serif;
+    font-size: 0.3984rem;
+    letter-spacing: 0.27888rem;
+    color: #a2a9ae;
+    line-height: 1.2;
+    text-shadow: 2.828px 2.828px 3.8px rgba(6, 0, 1, 0.004);
+    opacity: 0;
+    transition: opacity 0.5s ease 1.1s;
+    user-select: none;
+    -webkit-user-select: none;
+    &.show {
+      opacity: 1;
+    }
+  }
 }

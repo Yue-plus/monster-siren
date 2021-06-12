@@ -1,7 +1,7 @@
 import less from './index.less';
-import Header from '@/component/_layout/header/header';
-import LoadingView from '@/component/loadingView/loadingView';
-import SlideLogo from '@/component/slideLogo/slideLogo';
+import Header from '@/components/_layout/header/header';
+import LoadingView from '@/components/loadingView/loadingView';
+import SlideLogo from '@/components/slideLogo/slideLogo';
 
 export default function IndexPage() {
   return (

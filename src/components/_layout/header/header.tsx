@@ -1,5 +1,5 @@
 import less from './header.less';
-import PlayWidget from '@/component/_layout/header/playWidget/playWidget';
+import PlayWidget from '@/components/_layout/header/playWidget/playWidget';
 
 export default function Header() {
   return (

@@ -1,0 +1,114 @@
+.scroll {
+  position: fixed;
+  bottom: 0.93984rem;
+  right: 0;
+  z-index: 5;
+  width: 6.72rem;
+  height: 1.1rem;
+  opacity: 0;
+  outline: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  overflow: hidden;
+  &.visible .wrapper {
+    animation-play-state: running;
+  }
+  .wrapper {
+    height: 100%;
+    animation: scroll 3s ease-in-out infinite;
+    animation-name: scroll;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    //animation-play-state: paused;
+    &::before {
+      left: -4.5rem;
+    }
+    &::after {
+      left: 2.2rem;
+    }
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      top: calc(50% - 0.012rem);
+      display: block;
+      width: 5.94rem;
+      height: 0.024rem;
+      background-color: #fff;
+    }
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 0.6rem;
+      height: 0.24rem;
+      &::before {
+        content: 'SCROLL';
+        position: absolute;
+        transform-origin: left top;
+        transform: translate(-110%, -100%);
+        font-family: 'Geometos', serif;
+        font-size: 0.31992rem;
+        color: #fff;
+      }
+    }
+  }
+}
+
+.icon {
+  width: 1em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+  svg {
+    fill: currentColor;
+    width: 100%;
+    max-height: 100%;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  to {
+    transform: translateX(4.5rem);
+    opacity: 0;
+  }
+}
+
+@keyframes scrollH5 {
+  0% {
+    transform: translateX(16.5em);
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-6em);
+    opacity: 0;
+  }
+}

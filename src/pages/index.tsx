@@ -3,6 +3,7 @@ import Header from '@/components/_layout/header/header';
 import LoadingView from '@/components/loadingView/loadingView';
 import SlideLogo from '@/components/_layout/slideLogo/slideLogo';
 import Scroll from '@/components/_layout/scroll/scroll';
+import Copyright from '@/components/_layout/copyright/copyright';
 
 export default function IndexPage() {
   return (
@@ -14,6 +15,7 @@ export default function IndexPage() {
         a world familiarly unknown
       </div>
       <Scroll />
+      <Copyright />
     </div>
   );
 }

@@ -1,0 +1,121 @@
+.copyright {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  opacity: 0;
+  .content {
+    position: fixed;
+    bottom: -2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2.4rem;
+    background-color: rgba(6, 6, 6, 0.8);
+    box-shadow: none;
+    transition: all 0.3s ease;
+    .logo {
+      position: absolute;
+      left: 0.48rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 5.664rem;
+      height: 1.68rem;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 50%;
+    }
+    .info {
+      font-family: 'SourceHanSansCN-Medium', serif;
+      font-size: 0.24rem;
+      color: #999;
+      text-align: center;
+      p {
+        margin: 0;
+      }
+      p:first-child {
+        font-size: 0.36rem;
+      }
+      p + p {
+        margin-top: 0.24rem;
+      }
+      span + span {
+        margin-left: 0.24rem;
+      }
+    }
+  }
+  .buttonCopyright {
+    position: fixed;
+    bottom: 0.48rem;
+    right: 0.48rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 3.279984rem;
+    height: 0.799992rem;
+    padding: 0 0.36rem;
+    border: none;
+    font-size: 0.24rem;
+    background-color: transparent;
+    outline: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transition: transform 0.3s ease;
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      box-sizing: border-box;
+      width: 100%;
+      height: 20%;
+      border: 1px solid #7f8184;
+      //border-bottom-width: 1px;
+      transition: height 0.3s ease, border-color 0.3s ease;
+    }
+    &::before {
+      top: 0;
+      border-bottom-width: 0;
+    }
+    &::after {
+      bottom: 0;
+      border-top-width: 0;
+    }
+    span {
+      font-family: 'SourceHanSansCN-Medium', serif;
+      font-size: 0.36rem;
+      color: #7f8184;
+      transition: color 0.3s ease;
+    }
+    .icon {
+      width: 0.96rem;
+      height: 0.192rem;
+      overflow: hidden;
+      .inner {
+        display: flex;
+        flex-flow: row nowrap;
+        width: 200%;
+        height: 100%;
+        transform: translateX(-50%);
+        transition: transform 0.3s ease;
+        &::before,
+        &::after {
+          content: '';
+          flex: none;
+          display: block;
+          width: 50%;
+          height: 100%;
+          box-sizing: border-box;
+          border-bottom: 2px solid #7f8184;
+          border-right: 3px solid #7f8184;
+          transform: skewX(45deg) scale(0.8);
+          transition: border-color 0.3s ease;
+        }
+      }
+    }
+  }
+}

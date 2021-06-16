@@ -1,0 +1,40 @@
+.pageAbout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../../public/bg/bg_about.png),
+    url(../../../public/bg/bg_inner.png);
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+  background-position: 100%, 50%;
+  opacity: 0;
+  .container {
+    position: absolute;
+    top: 11.1192rem;
+    left: 2.5584em;
+    width: 100%;
+    font-family: 'SourceHanSansCN-Regular', serif;
+    color: #c6c9ce;
+    line-height: 1.2;
+    .aboutInfo {
+      font-size: 0.28rem;
+      line-height: 0.72rem;
+      color: #c6c9ce;
+      &.isEN {
+        margin-top: 0.24rem;
+        color: #9fa2a7;
+      }
+      p {
+        opacity: 0;
+        margin: 0;
+      }
+      .bold {
+        font-family: 'SourceHanSansCN-Bold', serif;
+        color: #fff;
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import less from './header.less';
 import PlayWidget from '@/components/_layout/header/playWidget/playWidget';
 
-import { Link } from 'umi';
+import { NavLink } from 'umi';
 
 export default function Header() {
   return (
@@ -39,18 +39,34 @@ export default function Header() {
         <PlayWidget />
       </div>
       <nav className={`${less.nav} ${less.show}`}>
-        <Link to="/about" className={`link ${less.navItem}`}>
+        <NavLink
+          to="/about"
+          activeClassName={less.isCurrent}
+          className={`link ${less.navItem}`}
+        >
           ABOUT
-        </Link>
-        <Link to="/music" className={`link ${less.navItem}`}>
+        </NavLink>
+        <NavLink
+          to="/music"
+          activeClassName={less.isCurrent}
+          className={`link ${less.navItem}`}
+        >
           MUSIC
-        </Link>
-        <Link to="/info" className={`link ${less.navItem}`}>
+        </NavLink>
+        <NavLink
+          to="/info"
+          activeClassName={less.isCurrent}
+          className={`link ${less.navItem}`}
+        >
           INFO
-        </Link>
-        <Link to="/contact" className={`link ${less.navItem}`}>
+        </NavLink>
+        <NavLink
+          to="/contact"
+          activeClassName={less.isCurrent}
+          className={`link ${less.navItem}`}
+        >
           CONTACT
-        </Link>
+        </NavLink>
         <a className={`link ${less.navItem}`}>LOGIN</a>
         {/*<div className={`${less.navItem} ${less.userGroup}`}>*/}
         {/*  <div className={less.container}>*/}

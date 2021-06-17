@@ -1,0 +1,45 @@
+.loadingWrapper {
+  pointer-events: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1.5rem;
+  background: #000;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  &.active {
+    opacity: 1;
+  }
+  .ghost,
+  .entity {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 0.5rem;
+    height: 0.5rem;
+    border: 0.1rem solid;
+  }
+  .ghost {
+    z-index: 0;
+    border-color: grey;
+    animation: loadingGhost 0.5s ease infinite;
+  }
+  .entity {
+    z-index: 1;
+    border-color: #fff;
+  }
+}
+
+@keyframes loadingGhost {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(45deg) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(45deg) scale(1.5);
+  }
+}

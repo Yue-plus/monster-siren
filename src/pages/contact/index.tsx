@@ -2,7 +2,7 @@ import less from './contact.less';
 
 export default function Contact() {
   return (
-    <div className={less.pageContact}>
+    <div className={less.pageContact} style={{ opacity: 1, zIndex: 1 }}>
       <div className={less.contactInfo}>
         <div style={{ transform: 'translateY(0%)', opacity: 1 }}>
           <span className={less.bold}>_Tel :</span>&nbsp;&nbsp;We do not use

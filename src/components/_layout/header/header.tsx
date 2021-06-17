@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header className={less.header}>
       <div className={`${less.action} ${less.show}`}>
-        <a className={less.home}>
+        <NavLink to="/" className={less.home}>
           <svg className={`metallicLogo ${less.logo}`} viewBox="0,0,201,99">
             <defs>
               <path
@@ -35,7 +35,7 @@ export default function Header() {
               />
             </g>
           </svg>
-        </a>
+        </NavLink>
         <PlayWidget />
       </div>
       <nav className={`${less.nav} ${less.show}`}>

@@ -24,7 +24,7 @@ export default function Index({
       >
         <div>{children}</div>
         <Header />
-        <LoadingView />
+        {/*<LoadingView />*/}
         <SlideLogo />
         <div className={`${less.slogan} ${less.show}`}>
           a world familiarly unknown

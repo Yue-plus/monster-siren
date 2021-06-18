@@ -1,6 +1,7 @@
 import less from './index.less';
 import Header from '@/components/_layout/header/header';
 import LoadingView from '@/components/loadingView/loadingView';
+import LoadingWrapper from '@/components/loadingWrapper/loadingWrapper';
 import SlideLogo from '@/components/_layout/slideLogo/slideLogo';
 import Scroll from '@/components/_layout/scroll/scroll';
 import Copyright from '@/components/_layout/copyright/copyright';
@@ -15,16 +16,23 @@ export default function Index({
   match,
 }: IRouteComponentProps) {
   return (
-    <div id={less.layout} className={less.layout} style={{ display: 'block' }}>
-      <div>{children}</div>
-      <Header />
-      <LoadingView />
-      <SlideLogo />
-      <div className={`${less.slogan} ${less.show}`}>
-        a world familiarly unknown
+    <>
+      <div
+        id={less.layout}
+        className={less.layout}
+        style={{ display: 'block' }}
+      >
+        <div>{children}</div>
+        <Header />
+        <LoadingView />
+        <SlideLogo />
+        <div className={`${less.slogan} ${less.show}`}>
+          a world familiarly unknown
+        </div>
+        <Scroll />
+        <Copyright />
       </div>
-      <Scroll />
-      <Copyright />
-    </div>
+      <LoadingWrapper />
+    </>
   );
 }

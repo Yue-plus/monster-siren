@@ -8,7 +8,10 @@ export default function Header() {
     <header className={less.header}>
       <div className={`${less.action} ${less.show}`}>
         <NavLink to="/" className={less.home}>
-          <svg className={`metallicLogo ${less.logo}`} viewBox="0,0,201,99">
+          <svg
+            className={`${less.metallicLogo} ${less.logo}`}
+            viewBox="0,0,201,99"
+          >
             <defs>
               <path
                 id="metallic-logo"

@@ -7,5 +7,7 @@ export default defineConfig({
     type: 'none',
   },
   fastRefresh: {},
-  dynamicImport: {},
+  dynamicImport: {
+    loading: '@/components/loadingView/loadingView',
+  },
 });

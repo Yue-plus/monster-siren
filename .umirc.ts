@@ -10,4 +10,8 @@ export default defineConfig({
   dynamicImport: {
     loading: '@/components/loadingView/loadingView',
   },
+  dva: {
+    immer: true,
+    hmr: false,
+  },
 });

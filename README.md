@@ -31,3 +31,5 @@ yarn start
 - [UmiJS - 插件化的企业级前端应用框架](https://umijs.org/zh-CN/docs)
 - [EJS -- 嵌入式 JavaScript 模板引擎 | EJS 中文文档](https://ejs.bootcss.com/#docs)
 - [Less 快速入门 | Less.js 中文文档 - Less 中文网](https://less.bootcss.com/#%E6%A6%82%E8%A7%88)
+- [Redux 中文文档 - JavaScript 应用程序的状态容器，提供可预测的状态管理。 | Redux 中文文档](https://www.reduxjs.cn/)
+- [DvaJS](https://dvajs.com/)

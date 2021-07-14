@@ -70,11 +70,11 @@ export default function Header() {
         >
           联系我们
         </NavLink>
-        <a className={`link ${less.navItem}`}>登入</a>
+        <a className={`link ${less.navItem}`}>登录</a>
         {/*<div className={`${less.navItem} ${less.userGroup}`}>*/}
         {/*  <div className={less.container}>*/}
         {/*    <div className={less.actionGroup}>*/}
-        {/*      <span className={less.userAction} data-cursor="pointer">登入</span>*/}
+        {/*      <span className={less.userAction} data-cursor="pointer">登录</span>*/}
         {/*    </div>*/}
         {/*    <div className={less.actionGroup}>*/}
         {/*      <span className={less.extra}>*/}

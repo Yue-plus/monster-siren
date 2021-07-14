@@ -47,34 +47,34 @@ export default function Header() {
           activeClassName={less.isCurrent}
           className={`link ${less.navItem}`}
         >
-          ABOUT
+          关于
         </NavLink>
         <NavLink
           to="/music"
           activeClassName={less.isCurrent}
           className={`link ${less.navItem}`}
         >
-          MUSIC
+          音乐
         </NavLink>
         <NavLink
           to="/info"
           activeClassName={less.isCurrent}
           className={`link ${less.navItem}`}
         >
-          INFO
+          动向
         </NavLink>
         <NavLink
           to="/contact"
           activeClassName={less.isCurrent}
           className={`link ${less.navItem}`}
         >
-          CONTACT
+          联系我们
         </NavLink>
-        <a className={`link ${less.navItem}`}>LOGIN</a>
+        <a className={`link ${less.navItem}`}>登入</a>
         {/*<div className={`${less.navItem} ${less.userGroup}`}>*/}
         {/*  <div className={less.container}>*/}
         {/*    <div className={less.actionGroup}>*/}
-        {/*      <span className={less.userAction} data-cursor="pointer">LOGIN</span>*/}
+        {/*      <span className={less.userAction} data-cursor="pointer">登入</span>*/}
         {/*    </div>*/}
         {/*    <div className={less.actionGroup}>*/}
         {/*      <span className={less.extra}>*/}

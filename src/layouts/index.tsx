@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import less from './index.less';
 import Header from '@/components/_layout/header/header';
 import LoadingView from '@/components/loadingView/loadingView';
@@ -15,6 +16,17 @@ export default function Index({
   history,
   match,
 }: IRouteComponentProps) {
+  const [htmlFontSize, setHtmlFontSize] = useState('50px');
+
+  useEffect(() => {
+    const setFontSize = () => {
+      setHtmlFontSize((innerHeight / 21.58).toFixed(1) + 'px');
+      document.documentElement.style.fontSize = htmlFontSize;
+    };
+    setFontSize();
+    window.addEventListener('resize', setFontSize);
+  });
+
   return (
     <>
       <div

@@ -4,7 +4,7 @@ export default function SlideLogo() {
   return (
     <div
       className={less.slideLogo}
-      style={{ opacity: 1, transform: `translateX(112.048px)` }}
+      style={{ opacity: 1, transform: `translateX(2.5584rem)` }}
     >
       <svg className={less.logo} viewBox="0,0,546,103">
         <defs>

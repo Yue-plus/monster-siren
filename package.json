@@ -25,8 +25,9 @@
   "devDependencies": {
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
-    "@umijs/test": "^3.4.24",
     "@umijs/plugin-dva": "^0.13.0",
+    "@umijs/preset-dumi": "^1.1.23",
+    "@umijs/test": "^3.4.24",
     "lint-staged": "^10.0.7",
     "prettier": "^2.2.0",
     "react": "17.x",

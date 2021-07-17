@@ -19,6 +19,9 @@
 /src/.umi-test
 /.env.local
 
+# packages
+/packages
+
 # IDEA&VScode
 .vscode/
 .idea/

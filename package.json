@@ -19,8 +19,12 @@
       "prettier --parser=typescript --write"
     ]
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "dependencies": {
-    "umi": "^3.4.24"
+    "umi": "^3.4.24",
+    "dumi-theme-monster-siren": "0.0.0"
   },
   "devDependencies": {
     "@types/react": "^17.0.0",

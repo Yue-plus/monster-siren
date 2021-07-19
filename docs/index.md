@@ -1,7 +1,41 @@
 # Monster-Siren
 
-塞壬唱片 MSR (Monster Siren Records)，泰拉世界十世纪最大的音乐发行商之一。
+这是一个仿 [塞壬唱片 - A WORLD FAMILIARLY UNKNOWN](https://monster-siren.hypergryph.com/) 项目
 
-从异教重金属乐队至偶像产业，塞壬唱片 MSR 旗下的签约艺人涉猎音乐各方面。
+***预览：<https://monster-siren.YuePlus.ink/>***
 
-根据最新统计数据，塞壬唱片 MSR 占有泰拉世界 30% 以上的音乐市场。
+## GitHub
+
+- [Yue-plus/monster-siren](https://github.com/Yue-plus/monster-siren)
+- [Yue-plus/dumi-theme-monster-siren](https://github.com/Yue-plus/dumi-theme-monster-siren)
+
+## 贡献者们
+
+- [Yue-plus](https://github.com/Yue-plus)
+
+<!-- BUG: https://github.com/umijs/dumi/issues/778
+<style>
+  .head-link {
+    color: #2c3e50;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 4px;
+    transition: .2s;
+  }
+  .head-link:hover{
+    color: #fff;
+    background-color: #3eaf7c;
+  }
+  .head-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+  }
+</style>
+<a class="head-link" target="_blank" href="https://github.com/Yue-plus">
+  <img class="head-img" src="./img/portrait/Yue-plus.png" alt="Yue-plus" />
+  <br />
+  Yue_plus
+</a>
+-->

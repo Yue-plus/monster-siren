@@ -1,0 +1,1 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([[5],{UfW6:function(n,e,t){"use strict";t.r(e),t.d(e,"default",(function(){return o}));var r=t("q1tI"),c=t.n(r);function o(){return c.a.createElement("h1",{style:{color:"red"}},"Music !")}}}]);
